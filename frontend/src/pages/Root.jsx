@@ -25,7 +25,7 @@ const RootLayout = () => {
     const expirationDate = new Date(storedTokenExpirationDate);
     const now = new Date();
     const duration = expirationDate.getTime() - now.getTime();
-    console.log(duration);
+    // console.log(duration);
 
     if (duration < 0) {
       navigate("/admin/login");
